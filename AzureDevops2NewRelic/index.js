@@ -69,7 +69,7 @@ module.exports = async function(context, item) {
                 releaseDefinitionRevision: item.resource.environment.releaseDefinitionRevision,
                 releaseCreatedBy: item.resource.environment.releaseCreatedBy,
                 triggerReason: item.resource.environment.triggerReason,
-                timeToDeploy: item.resource.environment.timeToDeploy,
+                timeToDeploy: item.resource.environment.timeToDeploy * 60, // Convert from hours to seconds
             });
         break;
         default:
