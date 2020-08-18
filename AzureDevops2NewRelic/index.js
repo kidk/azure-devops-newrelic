@@ -1,12 +1,10 @@
 module.exports = async function(context, item) {
     context.log({
-        queueItem: item,
+        action: 'Message received',
         enqueuedTimeUtc: context.bindingData.enqueuedTimeUtc,
         deliveryCount: context.bindingData.deliveryCount,
         messageId: context.bindingData.messageId,
-    });
-    context.log({
-        json: JSON.stringify(item)
+        item: JSON.stringify(item)
     });
 
     switch(item.eventType) {
