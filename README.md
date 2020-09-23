@@ -13,7 +13,6 @@ You can set-up as many as you like, currently `Build completed`, `Release create
 
 ```
 {
-    "event": {
     "buildId": 19,
     "definition": "zicht - CI",
     "definitionUrl": "https://samuelv.visualstudio.com/49881088-26d3-46cb-abcc-e1268e3ad6e8/_apis/build/Definitions/1",
@@ -29,10 +28,8 @@ You can set-up as many as you like, currently `Build completed`, `Release create
     "type": "build.complete",
     "uri": "vstfs:///Build/Build/19",
     "url": "https://samuelv.visualstudio.com/49881088-26d3-46cb-abcc-e1268e3ad6e8/_apis/build/Builds/19"
-    }
 },
 {
-    "event": {
     "detailedMessage": "Deployment of release Release-5 on stage dev rejected. Time to deploy: 00:00:30.",
     "environmentId": 5,
     "environmentName": "dev",
@@ -52,10 +49,8 @@ You can set-up as many as you like, currently `Build completed`, `Release create
     "timestamp": 1597051130868,
     "triggerReason": "ReleaseStarted",
     "type": "ms.vss-release.deployment-completed-event"
-    }
 },
 {
-    "event": {
     "buildId": 18,
     "definition": "zicht - CI",
     "definitionUrl": "https://samuelv.visualstudio.com/49881088-26d3-46cb-abcc-e1268e3ad6e8/_apis/build/Definitions/1",
@@ -71,6 +66,5 @@ You can set-up as many as you like, currently `Build completed`, `Release create
     "type": "build.complete",
     "uri": "vstfs:///Build/Build/18",
     "url": "https://samuelv.visualstudio.com/49881088-26d3-46cb-abcc-e1268e3ad6e8/_apis/build/Builds/18"
-    }
 }
 ```
