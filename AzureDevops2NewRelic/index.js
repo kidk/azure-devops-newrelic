@@ -40,10 +40,10 @@ module.exports = async function(context, item) {
                 releaseStatus: item.resource.release.status,
                 modifiedBy: item.resource.release.modifiedBy.displayName,
                 createdBy: item.resource.release.createdBy.displayName,
-                releaseDefinitionId: item.resource.releaseDefinition.id || '',
-                releaseDefinitionName: item.resource.releaseDefinition.name || '',
-                releaseDefinitionUrl: item.resource.releaseDefinition.url || '',
-                releaseDefinitionRevision: item.resource.releaseDefinitionRevision || '',
+                releaseDefinitionId: 'releaseDefinition' in item.resource ? item.resource.releaseDefinition.id : '',
+                releaseDefinitionName: 'releaseDefinition' in item.resource ? item.resource.releaseDefinition.name : '',
+                releaseDefinitionUrl: 'releaseDefinition' in item.resource ? item.resource.releaseDefinition.url : '',
+                releaseDefinitionRevision: 'releaseDefinition' in item.resource ? item.resource.releaseDefinitionRevision : '',
                 reason: item.resource.reason,
             });
         break;
