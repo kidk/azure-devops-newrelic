@@ -2,8 +2,12 @@
 
 ## Requirements
 
-* Git
+* [Install Git](https://github.com/git-guides/install-git)
 * NodeJS + NPM
+    * [Windows & Linux](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+    * [Mac](https://nodejs.dev/learn/how-to-install-nodejs)
+* [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+* [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#install-the-azure-functions-core-tools)
 
 ## Set-up
 
