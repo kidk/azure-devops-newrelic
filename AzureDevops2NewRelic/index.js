@@ -88,6 +88,7 @@ function sendToNewRelic(data) {
     let payload = [data]
 
     // Send event to New Relic
+    // TODO: Add support for EU datacenter - insights-collector.eu01.nr-data.net
     fetch('https://insights-collector.newrelic.com/v1/accounts/' + process.env["NEWRELIC_ACCOUNT_ID"] + '/events', {
         method: 'POST',
         headers: {

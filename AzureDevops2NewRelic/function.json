@@ -4,8 +4,8 @@
       "name": "mySbMsg",
       "type": "serviceBusTrigger",
       "direction": "in",
-      "queueName": "devops-events",
-      "connection": ""
+      "queueName": "devopsqueue",
+      "connection": "AzureWebJobsServiceBus"
     }
   ]
 }
