@@ -73,21 +73,21 @@ This means you have configured everything currectly. Please redo all these steps
 
 You should see `activeMessageCount` with a number above 0. If not, check your steps from above.
 
-7) Create an Azure storage account for the Azure Function App
+8) Create an Azure storage account for the Azure Function App
 
 `az storage account create --name newrelicdevops1234 --location westeurope --resource-group newrelic-devops --sku Standard_LRS`
 
 If you get a message that the storage account already exists, change the numbers after `--name newrelicdevops` to something else, for example `--name newrelicdevops5678`. Remember the name of your storage account as we will need it in the next step.
 
-8) Configure Azure Function App
+9) Configure Azure Function App
 
 `az functionapp create --name newrelic-devops-functions --storage-account newrelicdevops1234 --consumption-plan-location westeurope --runtime node --resource-group newrelic-devops --functions-version 3`
 
-9) Install Azure functions CLI
+10) Install Azure functions CLI
 
 You can find the instructions on Microsoft docs: [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local?tabs=macos%2Ccsharp%2Cbash#install-the-azure-functions-core-tools)
 
-10) Set-up the environment
+11) Set-up the environment
 
 Please run the following commands, but don't forget to replace the `{{  }}` fields with your own values.
 
@@ -97,11 +97,11 @@ Please run the following commands, but don't forget to replace the `{{  }}` fiel
 
 `az functionapp config appsettings set --name newrelic-devops-functions --resource-group newrelic-devops --settings "AzureWebJobsServiceBus={{REPLACE_ME_WITH_PRIMARY_CONNECTION_STRING}}"`
 
-11) Deploy the Azure function
+12) Deploy the Azure function
 
 `func azure functionapp publish newrelic-devops-functions`
 
-12) Done
+13) Done
 
 ## Example data
 
